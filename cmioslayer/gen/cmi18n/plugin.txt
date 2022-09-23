@@ -1,0 +1,7 @@
+# Plugin cmi18n
+objc.libs=
+java.initializer=
+objc.pods=
+android.permissions=
+android.injections=
+android.extra.dependencies=

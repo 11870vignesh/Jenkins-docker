@@ -1,0 +1,7 @@
+# Plugin cmwebkit
+objc.libs=WebKit.framework
+java.initializer=org.crossmobile.bind.wrapper.WebViewInitializer
+objc.pods=
+android.permissions=
+android.injections=
+android.extra.dependencies=

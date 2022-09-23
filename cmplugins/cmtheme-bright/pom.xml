@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>cmplugins</artifactId>
+        <groupId>org.crossmobile</groupId>
+        <version>4.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>cmtheme-bright</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.crossmobile</groupId>
+            <artifactId>cmioslayer</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>swing</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.crossmobile</groupId>
+                    <artifactId>cmplugin-swing-cmioslayer</artifactId>
+                    <version>${project.version}</version>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>android</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.crossmobile</groupId>
+                    <artifactId>cmplugin-android-cmioslayer</artifactId>
+                    <version>${project.version}</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.crossmobile</groupId>
+                <artifactId>cmplugin-maven-plugin</artifactId>
+                <version>${project.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>theme</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <name>Bright theme</name>
+                    <description>A light, bright colored theme, based on latest versions of original platform</description>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
