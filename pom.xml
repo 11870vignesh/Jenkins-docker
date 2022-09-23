@@ -10,10 +10,10 @@
 
     <modules>
         <module>cmutils</module>
-        <module>cmbuild</module>
+<!--         <module>cmbuild</module> -->
         <module>cmioslayer</module>
         <module>cmplugins</module>
-        <module>cmmanager</module>
+<!--         <module>cmmanager</module> -->
         <module>cmarchetypes</module>
         <module>cmproject</module>
     </modules>
